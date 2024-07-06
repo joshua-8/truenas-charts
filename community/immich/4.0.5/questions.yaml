@@ -96,6 +96,13 @@ questions:
             min: 9000
             max: 65535
             required: true
+        - variable: immichHostNetwork
+          label: Host Network
+          description: |
+            Bind to the host network. It's recommended to keep this disabled, but enabling it makes it accessible to tailscale, for example.</br>
+          schema:
+            type: boolean
+            default: false
 
   - variable: immichStorage
     label: ""
