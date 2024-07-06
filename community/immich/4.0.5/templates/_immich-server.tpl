@@ -6,7 +6,7 @@ workload:
     primary: true
     type: Deployment
     podSpec:
-      hostNetwork: false
+      hostNetwork: {{ .Values.immichNetwork.immichHostNetwork }}
       containers:
         server:
           enabled: true
